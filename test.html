@@ -20,3 +20,10 @@ class Main {
 			'about_my_city.php',
 			['sightsList' =>  $repo->getAllSights()]
 		);   
+		
+		
+		public function myAction () 
+	{
+		$view = new \App\View();
+		echo $view->render('about_me.php');
+	}
